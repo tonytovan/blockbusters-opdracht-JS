@@ -55,6 +55,7 @@ const movies = [
 //     actors: [ "Tim Robbins", "Morgan Freeman", "Bob Gunton" ]
 // }
 
+console.log( 'Opdracht 1a:')
 console.log( movies[0] )
 
 // Opdracht 1b: Log de titel van het eerste object in de 'movies' array
@@ -63,6 +64,7 @@ console.log( movies[0] )
 // Verwachte antwoord:
 // The Shawshank Redemption
 
+console.log( 'Opdracht 1b:')
 console.log( movies[0].title )
 
 // ------------------------------------------------------------------------------ //
@@ -71,6 +73,8 @@ console.log( movies[0].title )
 
 // Verwachte antwoord:
 // 6
+
+console.log( 'Opdracht 2a:')
 console.log( movies.length )
 
 // Opdracht 2b: Log het getal dat je nodig hebt om de laatste plek in de 'movies' array aan te spreken.
@@ -78,6 +82,8 @@ console.log( movies.length )
 // Tip: Houd er hierbij rekening mee dat een array altijd start bij het getal 0
 // Tip: maak eerst een variabele aan, waar je de lengte in opslaat,
 // pas deze waarde aan zodat je altijd de laatste plek in de array terug krijgt
+
+console.log( 'Opdracht 2b:')
 const lastIndexOfMovies = movies.length - 1
 console.log( lastIndexOfMovies )
 
@@ -93,6 +99,7 @@ console.log( lastIndexOfMovies )
 //     actors: [ 'Henry Fonda', 'Lee J. Cobb', 'Martin Balsam' ]
 // }
 
+console.log( 'Opdracht 2c:')
 console.log( movies[lastIndexOfMovies] )
 
 // ------------------------------------------------------------------------------ //
@@ -104,6 +111,7 @@ console.log( movies[lastIndexOfMovies] )
 // maar bij bijvoorbeeld Morgan Freeman is dit de lijst die je terug krijgt
 // [ 'Tim Robbins', 'Morgan Freeman', 'Bob Gunton' ]
 
+console.log( 'Opdracht 3a:')
 console.log( movies[0].actors )
 
 // Opdracht 3b: Log uit de 'movies' array jouw favoriete acteur.
@@ -111,6 +119,8 @@ console.log( movies[0].actors )
 
 // Verwachte antwoord:
 // Morgan Freeman
+
+console.log( 'Opdracht 3b:')
 console.log( movies[0].actors[1] )
 
 // Opdracht 3c: Log de laatste acteur van de het laatste object in de 'movies' array.
@@ -121,6 +131,8 @@ console.log( movies[0].actors[1] )
 
 // Verwachte antwoord:
 // Martin Balsam
+
+console.log( 'Opdracht 3c:')
 const lastIndexOfActors = movies[lastIndexOfMovies].actors.length - 1
 console.log( movies[lastIndexOfMovies].actors[lastIndexOfActors] )
 
@@ -131,14 +143,15 @@ console.log( movies[lastIndexOfMovies].actors[lastIndexOfActors] )
 // Zorg dat je de onderstaande variabele gebruikt en pas eventueel het entry-nummer aan,
 // om te kijken of je algoritme ook werkt wanneer je een andere film selecteert
 
-const selectedMovie = movies[3]
-
-// Verwacht antwoord bij 'const selectedMovie = movies[3]':
-// Goede film!
+const selectedMovie = movies[0]
 
 // Verwacht antwoord bij 'const selectedMovie = movies[0]':
 // Uitstekende film!!
 
+// Verwacht antwoord bij 'const selectedMovie = movies[3]':
+// Goede film!
+
+console.log( 'Opdracht 4a:')
 if( selectedMovie.rating > 8 ) {
     console.log('Uitstekende film!!')
 } else {
@@ -160,6 +173,7 @@ if( selectedMovie.rating > 8 ) {
 // Verwacht antwoord bij 'const selectedMovie = movies[5]':
 // Matige film
 
+console.log( 'Opdracht 4b:')
 if( selectedMovie.rating > 8 ) {
     console.log('Uitstekende film!!')
 } else if( selectedMovie.rating <= 8 && selectedMovie.rating > 6.5) {
@@ -186,6 +200,7 @@ if( selectedMovie.rating > 8 ) {
 // }
 // Enzovoorts...
 
+console.log( 'Opdracht 5a:')
 for ( let i = 0; i < movies.length; i++ ) {
     console.log(movies[i])
 }
@@ -200,6 +215,7 @@ for ( let i = 0; i < movies.length; i++ ) {
 // The Lord of the Rings: The Return of the King
 // 12 Angry Men
 
+console.log( 'Opdracht 5b:')
 for ( let i = 0; i < movies.length; i++ ) {
     console.log(movies[i].title)
 }
@@ -208,6 +224,7 @@ for ( let i = 0; i < movies.length; i++ ) {
 // Opdracht 5c: Log met behulp van de for-loop elk laatste acteur van elke film
 // Tip: maak weer gebruik van een eerder gecreëerde variabele
 
+console.log( 'Opdracht 5c:')
 for ( let i = 0; i < movies.length; i++ ) {
     console.log(movies[i].actors[lastIndexOfActors])
 }
@@ -225,6 +242,7 @@ for ( let i = 0; i < movies.length; i++ ) {
 // Uitstekende film!!
 // Matige film
 
+console.log( 'Opdracht 6:')
 for ( let i = 0; i < movies.length; i++ ) {
     if( movies[i].rating > 8 ) {
         console.log('Uitstekende film!!')
