@@ -37,15 +37,6 @@ const movies = [
   }
 ];
 
-// @todo dit zetten we dan in de readme, niet hierzeuw
-// Aandachtspunten
-// - Een array start altijd bij 0
-// - Een array heeft een length property
-// - Een array spreek je aan met de blokhaak annotatie
-// - Een object spreek je aan met de punt annotatie
-// - Je kunt het aanspreken van een array met daarbinnen een object combineren (en visa versa)
-
-
 // ------------------------------------------------------------------------------ //
 // Opdracht 1a: Log het eerste object in de 'movies' array
 
@@ -171,77 +162,4 @@ if (selectedMovie.rating > 8) {
   console.log('Goede film!');
 } else {
   console.log('Matige film');
-}
-
-// ------------------------------------------------------------------------------ //
-// Opdracht 5a: Log met behulp van de for-loop elk object binnen de array
-
-// Verwachte antwoord:
-// {
-//     title: 'The Shawshank Redemption',
-//     releaseDate: 1994,
-//     rating: 9.2,
-//     actors: [ 'Tim Robbins', 'Morgan Freeman', 'Bob Gunton' ]
-// }
-// {
-//     title: 'The Godfather',
-//     releaseDate: 1972,
-//     rating: 9.2,
-//     actors: [ 'Marlon Brando', 'Al Pacino', 'James Caan' ]
-// }
-// Enzovoorts...
-
-console.log('Opdracht 5a:')
-for (let i = 0; i < movies.length; i++) {
-  console.log(movies[i])
-}
-
-// @todo ik wil deze opdrachtjes 100% gebruiken, maar in het hoofdstuk waar deze opdracht staat komt loops pas later! Dus die kan hier nog niet in.
-
-// Opdracht 5b: Log met behulp van de for-loop elk film titel binnen de array
-
-// Verwachte antwoord:
-// The Shawshank Redemption
-// The Godfather
-// The Dark Knight
-// Pulp Fiction
-// The Lord of the Rings: The Return of the King
-// 12 Angry Men
-
-console.log('Opdracht 5b:')
-for (let i = 0; i < movies.length; i++) {
-  console.log(movies[i].title)
-}
-
-
-// Opdracht 5c: Log met behulp van de for-loop elk laatste acteur van elke film
-// Tip: maak weer gebruik van een eerder gecreëerde variabele
-
-console.log('Opdracht 5c:')
-for (let i = 0; i < movies.length; i++) {
-  console.log(movies[i].actors[lastIndexOfActors])
-}
-
-// ------------------------------------------------------------------------------ //
-// Opdracht 6: Herschrijf opdracht 4b, zodat deze nu binnen een for-loop
-// voor elke film checkt wat het cijfer is en dit voor alle films logt
-// Tip: Je maakt hier dus GEEN gebruik meer van de variabele selectedMovie
-
-// Verwachte antwoord:
-// Uitstekende film!!
-// Uitstekende film!!
-// Uitstekende film!!
-// Goede film!
-// Uitstekende film!!
-// Matige film
-
-console.log('Opdracht 6:')
-for (let i = 0; i < movies.length; i++) {
-  if (movies[i].rating > 8) {
-    console.log('Uitstekende film!!')
-  } else if (movies[i].rating <= 8 && movies[i].rating > 6.5) {
-    console.log('Goede film!')
-  } else {
-    console.log('Matige film')
-  }
 }
