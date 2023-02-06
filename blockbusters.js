@@ -40,7 +40,7 @@ const movies = [
 // ------------------------------------------------------------------------------ //
 // Opdracht 1a: Log het eerste object in de 'movies' array
 
-// Verwachte antwoord:
+// Verwacht antwoord:
 // {
 //     title: "The Shawshank Redemption",
 //     releaseDate: 1994,
@@ -52,14 +52,14 @@ const movies = [
 
 // Opdracht 1b: Log de titel van het eerste object in de 'movies' array
 
-// Verwachte antwoord:
+// Verwacht antwoord:
 // The Shawshank Redemption
 
 
 // ------------------------------------------------------------------------------ //
 // Opdracht 2a: Log de hoeveel films er in de 'movies' array staan (de lengte van de array). Let op: wanneer de array langer of korter wordt, moet dit nog steeds werken. Je mag dus niet zelf tellen!
 
-// Verwachte antwoord:
+// Verwacht antwoord:
 // 6
 
 
@@ -94,7 +94,7 @@ const movies = [
 
 // Opdracht 3b: Log de tweede acteur van de film "The Shawshank Redemption". Tip: je spreekt dus eerst de array, daarna het object en vervolgens weer een array aan.
 
-// Verwachte antwoord:
+// Verwacht antwoord:
 // Morgan Freeman
 
 
@@ -102,7 +102,7 @@ const movies = [
 // Opdracht 3c: Log de laatste acteur van de laatste film in 'movies' array. Let op: wanneer de array langer of korter wordt, of wanneer er meer of minder acteurs in dit rijtje staan, moet dit nog steeds werken!
 // Tip: gebruik hiervoor o.a. jouw code uit 2b voor.
 
-// Verwachte antwoord:
+// Verwacht antwoord:
 // Martin Balsam
 
 
