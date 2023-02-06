@@ -11,11 +11,13 @@ Schrijf onder iedere vraag de JavaScript code die gevraagd wordt en check altijd
 ## Script runnen
 Als je de code wil runnen kun je dit doen door het volgende in de terminal in te voeren:
 
-`nodemon blockbusters.js`
+```shell
+nodemon blockbusters.js
+```
 
 ## Aandachtspunten
-* Een array start altijd bij 0
-* Een array heeft een length property
-* Een array spreek je aan met de blokhaak annotatie
-* Een object spreek je aan met de punt annotatie
+* Een array start altijd bij 0;
+* Een array heeft een `.length`-property;
+* Een array spreek je aan met de blokhaak-annotatie;
+* Een object spreek je aan met de punt-annotatie;
 * Je kunt het aanspreken van een array met daarbinnen een object combineren (en visa versa)
