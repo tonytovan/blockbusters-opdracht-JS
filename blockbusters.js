@@ -39,7 +39,7 @@ const movies = [
 
 // ------------------------------------------------------------------------------ //
 // Opdracht 1a: Log het eerste object in de 'movies' array
-
+console.log(movies[0]);
 // Verwacht antwoord:
 // {
 //     title: "The Shawshank Redemption",
@@ -54,18 +54,20 @@ const movies = [
 
 // Verwacht antwoord:
 // The Shawshank Redemption
-
+console.log(movies[0].title);
 
 // ------------------------------------------------------------------------------ //
 // Opdracht 2a: Log de hoeveel films er in de 'movies' array staan (de lengte van de array). Let op: wanneer de array langer of korter wordt, moet dit nog steeds werken. Je mag dus niet zelf tellen!
-
+const lengthMovies = movies.length
+console.log(lengthMovies);
 // Verwacht antwoord:
 // 6
 
 
 
 // Opdracht 2b: Log het indexnummer van de laatste film in de 'movies' array. Let op: wanneer de array langer of korter wordt, moet dit nog steeds werken!
-
+const lastIndexOfMovies = movies.length - 1;
+console.log(lastIndexOfMovies);
 // Verwacht antwoord:
 // 5
 
@@ -73,6 +75,7 @@ const movies = [
 
 // Opdracht 2c: Log het laatste object in de 'movies' array. Let op: wanneer de array langer of korter wordt, moet dit nog steeds werken!
 // Tip: maak gebruik van de code die je in de vorige opdracht hebt gemaakt.
+console.log(movies[lastIndexOfMovies]);
 
 // Verwacht antwoord:
 // {
@@ -90,17 +93,20 @@ const movies = [
 // Verwachte antwoord:
 // ["John Travolta", "Samuel L. Jackson", "Uma Thurman"]
 
-
+console.log(movies[3].actors);
 
 // Opdracht 3b: Log de tweede acteur van de film "The Shawshank Redemption". Tip: je spreekt dus eerst de array, daarna het object en vervolgens weer een array aan.
 
 // Verwacht antwoord:
 // Morgan Freeman
 
+console.log(movies[0].actors[1]);
 
 
 // Opdracht 3c: Log de laatste acteur van de laatste film in 'movies' array. Let op: wanneer de array langer of korter wordt, of wanneer er meer of minder acteurs in dit rijtje staan, moet dit nog steeds werken!
 // Tip: gebruik hiervoor o.a. jouw code uit 2b voor.
+const lastOfActors = movies[lastIndexOfMovies].actors.length -1;
+console.log(movies[lastIndexOfMovies].actors[lastOfActors]);
 
 // Verwacht antwoord:
 // Martin Balsam
@@ -113,7 +119,13 @@ const movies = [
 // Zorg dat je de onderstaande variabele gebruikt en pas eventueel het entry-nummer aan,
 // om te kijken of je algoritme ook werkt wanneer je een andere film selecteert!
 
-const selectedMovie = movies[0];
+const selectedMovie = movies[3];
+
+if (selectedMovie.rating > 8) {
+  console.log("Uitstekende film!");
+} else {
+  console.log("Goede film!");
+}
 
 // Verwacht antwoord bij 'const selectedMovie = movies[0]':
 // Uitstekende film!!
@@ -128,6 +140,16 @@ const selectedMovie = movies[0];
 // maar wel hoger dan een 6 en een 'Matige film' logt bij een lager cijfer dan 6.
 // Gebruik weer de variabele uit de vorige opdracht.
 // Tip: gebruik de && selector als het getal binnen twee condities moet vallen
+console.log('Opdracht 4b:');
+if (selectedMovie.rating > 8) {
+  console.log("Uitstekende film!");
+} else if (selectedMovie.rating <= 8 && selectedMovie.rating > 6.5) {
+  console.log("Goede film!");
+}
+  else {
+  console.log("Matige film!");
+}
+
 
 // Verwacht antwoord bij 'const selectedMovie = movies[0]':
 // Uitstekende film!!
